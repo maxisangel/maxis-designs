@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <!-- Google Fonts - Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+
+    <!-- Google Fonts - hamburger menu icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=block" />
+
+    <!-- Flickity Carousel CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+    <!-- my css -->
+    <link rel="stylesheet" href="stylesheet.css">
+
+    <title>Website Template</title>
+</head>
+
+<body>
+
+        <!-- = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+
+          HEADER AND NAVIGATION
+    
+        = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = -->
+
+        <header>
+            <nav class="topnav" id="myTopnav">
+                <a href="index.html">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="the-everything-blog.html">The Everything Blog</a>
+                <a href="about.html">About Me!</a>
+                <a href="contact.html">Contact Maxis</a>
+            </nav>
+            <button type="button" class="icon" id="menuToggle" onclick="toggleMenu()" aria-label="Toggle menu" aria-expanded="false" aria-controls="myTopnav">
+                <span class="material-symbols-outlined" id="menuIcon">menu</span>
+            </button>
+        </header>
+
+
+<main>
+    
+        <!-- = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+
+          FIRST SCREEN INTRO
+    
+        = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = -->
+
+        <section class="introduction">
+            <h1>
+                Hey there!
+                <br> Welcome to Maxis's Portfolio 
+            </h1>
+            <p>
+                This website contains a showcase of my design portfolio projects and has a small blog section I update when I had freetime.
+            </p>
+            <a href="#" class="readmore-button">
+                Jump to the 'Everything Blog' &hellip;
+            </a>
+        </section>
+
+    <!-- = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+
+        FILTER Projects
+    
+    = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = -->
+
+        <h2>Filter through the Projects</h2>
+
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All (10)</button>
+                <button class="filter-btn" data-filter="brand">Brand (3)</button>
+                <button class="filter-btn" data-filter="marketing">Marketing (1)</button>
+                <button class="filter-btn" data-filter="photography">Photography (2)</button>
+                <button class="filter-btn" data-filter="print">Print (4)</button>
+                <button class="filter-btn" data-filter="socialmedia">Social Media (1)</button>
+                <button class="filter-btn" data-filter="website">Website (4)</button>
+            </div>
+
+        <!-- = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+
+          Portfolio Selection Grid
+    
+        = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = -->
+
+
+<section class="project-card-list">
+    <div class="posts-container">
+
+        <!-- PROJECT 1 -->
+        <div class="post website socialmedia marketing photography">
+            <a href="debrief-graduate-exhibition-2026.html" class="no-link-look">
+                <div class="project-card" data-bg="#ff48b0">
+                    <img src="images/project/DEBRIEF/MaxisAngel_2-lnd.jpg" alt="projectimage1" class="project-card-img">
+
+                    <div class="project-card-text">
+                        <h2 class="project-card-h2">DEBRIEF Graduate Exhibition 2026</h2>
+                        <p class="project-card-p">Otago Polytechnic's, School of Design annual end-of-year exhibition for all graduating students. Creating something vibrant, unique and student-focused was key to this project.
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <!-- PROJECT 2 -->
+        <div class="post brand website">
+            <a href="shopify-store-maxisdesign.html" class="no-link-look">
+                <div class="project-card" data-bg="#8be0a1">
+                    <img src="images/" alt="projectimage1" class="project-card-img">
+
+                    <div class="project-card-text">
+                        <h2 class="project-card-h2">Shopify Store: Maxis Design</h2>
+                        <p class="project-card-p">Our task was to create a site using Shopify - anything we wanted. I had wanted to create a website for myself and work earlier in the year, and thought this course could be a great opportunity to trial different design choices and test a store-version of my work.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <!-- PROJECT 3 -->
+        <div class="post website">
+            <a href="tahi-otepoti-festival.html" class="no-link-look">
+                <div class="project-card" data-bg="#ffdc2f">
+                    <img src="images/project/TahiFestival/TahiOtepotiwebpagemockup.png" alt="projectimage1" class="project-card-img">
+
+                    <div class="project-card-text">
+                        <h2 class="project-card-h2">Tahi Otepoti Festival 2026</h2>
+                        <p class="project-card-p">A new solo performance festival brought to Dunedin. A collaboration between the Dunedin Arts Festival crew and the Tahi (wellington) team. They were requiring a brand identity, posters, brochure, social media and website help to bring the event to life.</p>
+
+                    </div>
+                </div>
+            </a>
+        </div>
+
+                <!-- PROJECT 4 -->
+        <div class="post print">
+            <a href="tuhura-museum-shop.html" class="no-link-look">
+                <div class="project-card" data-bg="#231f20">
+                    <img src="images/Project/TuhuraMuseum/Kiwi@4x_1.png" alt="projectimage1" class="project-card-img">
+
+                    <div class="project-card-text">
+                        <h2 class="project-card-h2">Tuhura Museum Shop</h2>
+                        <p class="project-card-p">The Tuhura Otago Museum was revamping their store shop. Looking to the School of Design students for help, we were to tasks to pitch, plan, draft, iterate and create different store items which could potentially be used within the museum store.</p>
+                        
+                    </div>
+                </div>
+            </a>
+        </div>
+
+            <!-- PROJECT 5 -->
+        <div class="post print">
+            <a href="no-money-no-skill-no-problem.html" class="no-link-look">
+                <div class="project-card" data-bg="#abd8f4">
+                    <img src="images/" alt="projectimage1" class="project-card-img">
+
+                    <div class="project-card-text">
+                        <h2 class="project-card-h2">No Money, No Skill, No Problem!</h2>
+                        <p class="project-card-p">This project combined Fashion and Communication design students to create any item for sale in a market day. Our item of choice was a cookbook which GENUINLEY targetted University students, only consisting of meals which had actually affordable and easily accessable ingredients and were either easy or quick to cook up. </p>
+                        
+                    </div>
+                </div>
+            </a>
+        </div>
+
+                    <!-- PROJECT 6 -->
+        <div class="post brand print">
+            <a href="Broad-Bay-School.html" class="no-link-look">
+                <div class="project-card" data-bg="#8cc63f">
+                    <img src="images/Project/BroadBaySchool/MainLogo_CMYK.png" alt="projectimage1" class="project-card-img">
+
+                    <div class="project-card-text">
+                        <h2 class="project-card-h2">Broad Bay School Rebrand</h2>
+                        <p class="project-card-p">The small suburb of Broad Bay School was needing a rebrand to encourage new enrolment and have a stronger visual identity and presence. </p>
+                        
+                    </div>
+                </div>
+            </a>
+        </div>
+
+                    <!-- PROJECT 7 -->
+        <div class="post print brand">
+            <a href="clean-creatures.html" class="no-link-look">
+                <div class="project-card" data-bg="#e75f3e">
+                    <img src="images/Project/CleanCreatures/PSD/Clean creatursphot.psd" alt="projectimage1" class="project-card-img">
+
+                    <div class="project-card-text">
+                        <h2 class="project-card-h2">Clean Creatures</h2>
+                        <p class="project-card-p">The </p>
+                        
+                    </div>
+                </div>
+            </a>
+        </div>
+
+                    <!-- PROJECT 8 -->
+        <div class="post website">
+            <a href="earthy-vegetables" class="no-link-look">
+                <div class="project-card" data-bg="#749b5a">
+                    <img src="images/Project/EarthyVegetables/Laptop_Vege1.jpg" alt="projectimage1" class="project-card-img">
+
+                    <div class="project-card-text">
+                        <h2 class="project-card-h2">Earthy Vegetables</h2>
+                        <p class="project-card-p">The </p>
+                        
+                    </div>
+                </div>
+            </a>
+        </div>
+
+                            <!-- PROJECT 9 -->
+        <div class="post photography">
+            <a href="otago-polytechnic-electives" class="no-link-look">
+                <div class="project-card" data-bg="#0E5AA5">
+                    <img src="images/Project/OPPhotography/Alex-24.jpg" alt="projectimage1" class="project-card-img">
+
+                    <div class="project-card-text">
+                        <h2 class="project-card-h2">Otago Polytechnic School of Design Electives</h2>
+                        <p class="project-card-p">The </p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+    </div>
+</section>
+
+
+                    <!-- PROJECT 10 -->
+        <div class="post print brand">
+            <a href="moolk.html" class="no-link-look">
+                <div class="project-card" data-bg="#008fc4">
+                    <img src="images/Project/Moolk/MoolkEdited-13.png" alt="projectimage1" class="project-card-img">
+
+                    <div class="project-card-text">
+                        <h2 class="project-card-h2">MOOLK</h2>
+                        <p class="project-card-p">The </p>
+                        
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        
+
+        <!-- = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+
+            FOOTER
+
+        = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = -->
+        <footer>
+            <div class="footer__copyright-details">
+                <p>All images are in the public domain.<br>Copyright Your Name Here &copy; 2024.</p>
+                <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><span
+                        property="dct:title">This website</span> by <span property="cc:attributionName">Maxis Angel</span></p>
+            </div>
+        </footer>
+
+    </main>
+
+
+    <!-- JavaScript goes here -->
+    <script>
+        const projectCards = document.querySelectorAll('.project-card');
+
+        projectCards.forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                document.body.style.backgroundColor = card.dataset.bg;
+            });
+
+            card.addEventListener('mouseleave', () => {
+                document.body.style.backgroundColor = '#ffffff';
+            });
+        });
+    </script>
+
+     <script>
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const posts = document.querySelectorAll('.post');
+
+        filterButtons.forEach(button => {
+
+            button.addEventListener('click', () => {
+
+                // Get the selected filter
+                const filter = button.dataset.filter;
+
+                // Loop through every post
+                posts.forEach(post => {
+
+                    // Show all posts or only matching posts
+                    if (filter === 'all' || post.classList.contains(filter)) {
+                        post.style.display = '';
+                    } else {
+                        post.style.display = 'none';
+                    }
+
+                });
+
+                // Update the active button
+                filterButtons.forEach(btn => {
+                    btn.classList.remove('active');
+                });
+
+                button.classList.add('active');
+
+            });
+
+        });
+    </script>
+    
+</body>
+
+</html>
